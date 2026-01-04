@@ -10,11 +10,13 @@ boton.addEventListener("click", async () => {
     if (isNaN(saldo) || saldo <= 0) {
         mensajeerror.textContent = "Por favor, ingrese un número válido mayor que cero.";
         mensajeerror.style.display = "block";  // ✅ mostrar
-
         tablaDiv.innerHTML = "";        
+        return;                                // ⚠️ detiene el resto de la función
+
     } else {
         mensajeerror.textContent = "";
-    }       
+        mensajeerror.style.display = "none";  
+      }       
 
     const response = await fetch("/calcular", {
         method: "POST",

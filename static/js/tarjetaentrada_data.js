@@ -9,6 +9,8 @@ boton.addEventListener("click", async () => {
 
     if (isNaN(saldo) || saldo <= 0) {
         mensajeerror.textContent = "Por favor, ingrese un número válido mayor que cero.";
+        mensajeerror.style.display = "block";  // ✅ mostrar
+
         tablaDiv.innerHTML = "";        
     } else {
         mensajeerror.textContent = "";

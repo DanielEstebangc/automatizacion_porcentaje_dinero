@@ -1,9 +1,18 @@
 const boton = document.getElementById("calcular");
 const input = document.getElementById("valor");
 const tablaDiv = document.getElementById("tabla");
+const mensajeerror = document.getElementById("error");
+
 
 boton.addEventListener("click", async () => {
     const saldo = Number(input.value);
+
+    if (isNaN(saldo) || saldo <= 0) {
+        mensajeerror.textContent = "Por favor, ingrese un número válido mayor que cero.";
+        tablaDiv.innerHTML = "";        
+    } else {
+        mensajeerror.textContent = "";
+    }       
 
     const response = await fetch("/calcular", {
         method: "POST",

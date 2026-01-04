@@ -28,13 +28,13 @@ Este proyecto permite calcular y manejar automáticamente porcentajes de dinero 
 
 ## ⚙️ Instalación
 
-1. Clonar el repositorio:
+# 1. Clonar el repositorio:
 
 ```bash
 git clone https://github.com/DanielEstebangc/automatizacion_porcentaje_dinero.git
 cd automatizacion_porcentaje_dinero
 ```
-2. Crear y activar entorno virtual:
+# 2. Crear y activar entorno virtual:
    
 # Crear entorno virtual
 python -m venv .venv
@@ -45,16 +45,16 @@ python -m venv .venv
 # Linux/Mac
 source .venv/bin/activate
 
-3. Instalar dependencias:
+# 3. Instalar dependencias:
 python -m pip install --upgrade pip
 
 pip install -r requirements.txt
 
-5. Ejecutar el proyecto:
+# 5. Ejecutar el proyecto:
 python run.py
 
 
-📊 Uso
+## 📊 Uso
 
 Ingresar saldo en la interfaz web.
 
@@ -66,19 +66,19 @@ La tabla se actualiza dinámicamente en el frontend.
 
 Ejemplo de uso:
 
-Ejemplo de tabla calculada:
+# Ejemplo de tabla calculada:
 
 | Saldo | 10% | 20% | 30% |
 |-------|-----|-----|-----|
 | 1000  | 100 | 200 | 300 |
 
-🚀 Despliegue
+## 🚀 Despliegue
 
 Backend: Ejecutar run.py en tu servidor local o en la nube.
 
 Frontend: Se puede desplegar en GitHub Pages conectando la carpeta frontend.
 
-📝 Contribuciones
+## 📝 Contribuciones
 
 Si quieres colaborar:
 
@@ -92,11 +92,11 @@ Haz push a tu rama: git push origin feature/nueva-funcionalidad
 
 Abre un Pull Request.
 
-📄 Licencia
+## 📄 Licencia
 
 MIT License. Consulta el archivo LICENSE para más información.
 
-👤 Autor
+## 👤 Autor
 
 Daniel Galvis
 

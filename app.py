@@ -24,15 +24,15 @@ def calcular():
     # 3️⃣ convertir DataFrame a algo que JS entienda
     resultado = df.to_dict(orient="records")
 
-     # 🔹 construir ruta
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    ruta_archivo = os.path.join(
-        BASE_DIR,
-        "Datos",
-        "historial.xlsx"
-    )
+    #  # 🔹 construir ruta
+    # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    # ruta_archivo = os.path.join(
+    #     BASE_DIR,
+    #     "Datos",
+    #     "historial.xlsx"
+    # )
 
-    guardar_datos(ruta_archivo, df)
+    # guardar_datos(ruta_archivo, df)
 
     return jsonify(resultado)
 

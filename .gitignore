@@ -1,8 +1,8 @@
 # Python
+.venv/
 __pycache__/
 *.pyc
 .env
-venv/
 
 # Outputs
 *.xlsx

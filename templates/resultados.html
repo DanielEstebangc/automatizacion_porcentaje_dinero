@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aut Money</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout/layout.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/table/table.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/input-card/input-card.css') }}">
+
+
+
+    <!-- GOOGLE FONTS: POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ICONS: MATERIAL SYMBOLS OUTLINED (CORRECTO) -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <header>
+        <div style="
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        ">
+            <span class="material-symbols-outlined">account_balance</span>  
+            <h2>Aut money</h2>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="Tarjeta">
+            <div>
+                <h4 class="h4-glow"> Titulo </h4>
+            </div>
+
+            <div id="inputsCalculo">
+                
+                <div class="input-flotante">
+                    <input type="text" id="valor" required />
+                    <label for="valor">Ingrese valor</label>
+                </div>
+                
+                <button class="btn-pro" id="calcular">
+                    calcular
+                </button>
+
+            </div>
+
+               <p id="error">error</p>
+
+            
+        </div>
+
+        <div class="divTabla">
+            <h3>Porcentajes de dinero</h3>
+
+                <!-- 🔥 ESTE ES EL CONTENEDOR QUE USA JS -->
+                <div id="tabla"></div>
+        </div>
+        
+    
+    </main>
+
+    <footer>
+        <div>
+            <img class="footer-logo"   src="../static/assets/logo_DS.svg" alt="DS" />
+        </div>
+    </footer>
+
+   
+    <script src="../static/js/tarjetaentrada_data.js"></script>
+
+</body>
+</html>

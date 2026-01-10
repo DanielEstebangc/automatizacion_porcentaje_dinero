@@ -43,3 +43,10 @@ footer {
   margin-right: 4px;
   transform: translateY(1px);
 }
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos */
+}

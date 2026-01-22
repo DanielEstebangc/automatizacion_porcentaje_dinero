@@ -2,19 +2,19 @@
     gap: 20px;
     display: flex;
     flex-direction: column;
-    align-self: flex-start;   /* se mueve a la izquierda */
+    /* align-self: flex-start;   se mueve a la izquierda */
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    transform: translate(90px, -30px); /* X=20px a la derecha, Y=20px arriba */
+   /*ransform: translate(90px, -30px); /* X=20px a la derecha, Y=20px arriba */
 
      /* 👇 EL BORDE EXISTE DESDE YA */
     border: 2px solid transparent;
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+    
     /*transform: translate(90px, -30px);
 
     /* 👇 ANIMACIÓN SUAVE */

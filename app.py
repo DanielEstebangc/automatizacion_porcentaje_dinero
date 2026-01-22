@@ -36,11 +36,12 @@ def calcular():
 
     return jsonify(resultado)
 
-# Ejecutar la aplicación en test
-if __name__ == "__main__":
-    app.run(debug=True)
+# # Ejecutar la aplicación en test
+# if __name__ == "__main__":
+#     app.run(debug=True)
 
 # Ejecutar la aplicación en producción
-# if __name__ == "__main__":
-#     port = int(os.environ.get("PORT", 5000))  # Render pasa el puerto por env
-#     app.run(host="0.0.0.0", port=port)
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # Render pasa el puerto por env
+    app.run(host="0.0.0.0", port=port)

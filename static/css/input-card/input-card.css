@@ -1,4 +1,6 @@
 .Tarjeta{
+    width: 100%;
+    max-width: 360px;
     gap: 20px;
     display: flex;
     flex-direction: column;
@@ -23,9 +25,8 @@
         box-shadow 0.3s ease;
 
 }
-
 .Tarjeta h4 {
-  font-size: 18px;
+  font-size: clamp(1rem, 4vw, 1.2rem);
   font-weight: 600;
   color: #2e2e2e;
   margin-bottom: 8px;
@@ -61,7 +62,8 @@
   border: 1px solid #c8eac9; /* borde suave */
   border-radius: 8px;
   outline: none;
-  width: 200px;
+  width: 100%;
+  max-width: 260px;
   background-color: #f3faf3;
   color: #224525;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -98,6 +100,8 @@
 
 /* botón */
 .btn-pro {
+  width: 100%;
+  max-width: 260px;
   position: relative;
   padding: 14px 32px;
   font-size: 16px;
@@ -151,4 +155,19 @@
 .btn-pro span {
   position: relative;
   z-index: 1;
+}
+
+@media (min-width: 1024px) {
+
+  .Tarjeta {
+    max-width: 420px;
+  }
+
+  .input-flotante input {
+    max-width: 300px;
+  }
+
+  .btn-pro {
+    max-width: 300px;
+  }
 }

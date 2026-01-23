@@ -37,6 +37,7 @@ def calcular():
     return jsonify(resultado)
 
 # # Ejecutar la aplicación en test
+
 # if __name__ == "__main__":
 #     app.run(debug=True)
 

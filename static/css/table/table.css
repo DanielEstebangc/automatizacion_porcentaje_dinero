@@ -1,49 +1,71 @@
-.styling-tabla{
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    min-width: 400px;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-
+/* CONTENEDOR RESPONSIVE */
+.divTabla {
+  margin-top: 20px;
+  width: 100%;
+  overflow-x: auto;          /* 🔥 scroll horizontal en móvil */
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
 }
 
+/* TÍTULO */
+.divTabla h3 {
+  color: #358438;
+  margin-bottom: 12px;
+}
+
+/* TABLA BASE (MÓVIL FIRST) */
+.styling-tabla {
+  border-collapse: collapse;
+  width: 100%;               /* 👈 clave responsive */
+  min-width: 600px;          /* 👈 mantiene estructura */
+  font-size: 0.9rem;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+/* CABECERA */
 .styling-tabla thead tr {
-    background-color: #6bbd6e;
-    color: #ffffff;
-    text-align: left;
-    font-weight: bold;
+  background-color: #6bbd6e;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 600;
 }
 
 .styling-tabla th {
-    text-align: left;     /* encabezados alineados a la izquierda */
-    padding: 12px 15px;   /* espacio interno de la celda */
+  padding: 12px 15px;
+  text-align: left;
+  white-space: nowrap;       /* evita saltos raros */
 }
 
+/* CUERPO */
 .styling-tabla td {
-    text-align: center;   /* contenido centrado */
-    padding: 12px 15px;
+  padding: 12px 15px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .styling-tabla tbody tr {
-    border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 .styling-tabla tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 .styling-tabla tbody tr:last-of-type {
-    border-bottom: 2px solid #6bbd6e;
+  border-bottom: 2px solid #6bbd6e;
 }
 
-.divTabla{
-    margin-top: 20px;
-    text-align: center;
-    transform: translateY(-40px);
-}
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .divTabla {
+    overflow-x: visible;     /* sin scroll en PC */
+  }
 
-.divTabla h3{
-    color: #358438;
+  .styling-tabla {
+    min-width: unset;
+    font-size: 1rem;
+  }
 }

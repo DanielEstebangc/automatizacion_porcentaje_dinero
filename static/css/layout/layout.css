@@ -34,6 +34,8 @@ main {
   justify-content: flex-start;
   width: 100%;
   padding-top: 60px;
+  padding-bottom: 80px; /* 👈 aire antes del footer */
+
 }
 
 /* ===== CONTENEDOR ===== */

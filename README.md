@@ -1,6 +1,6 @@
 # Automatización de Porcentaje de Dinero
 
-Este proyecto permite calcular y manejar automáticamente porcentajes de dinero de manera eficiente. Incluye un backend en Python con Flask y un frontend interactivo para visualizar resultados y diseño reponsive y exportarlos a Excel.
+Este proyecto permite calcular y manejar automáticamente porcentajes de dinero de manera eficiente. Incluye un backend en Python con Flask y un frontend interactivo para visualizar resultados y diseño responsive  y exportarlos a Excel.
 
 ---
 

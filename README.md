@@ -104,4 +104,13 @@ GitHub: DanielEstebangc
 
 Email: danielgalvis.3107@gmail.com
 
+## Imagenes
+
+# desktop
+<img width="1893" height="979" alt="image" src="https://github.com/user-attachments/assets/1ba10cc4-c044-4c0c-b852-b8d8633d6e0a" />
+
+# mobil
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/7615d7bc-4c21-474a-8abe-fc1620dfff02" />
+
+
 
